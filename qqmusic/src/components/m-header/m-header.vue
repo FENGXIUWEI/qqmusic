@@ -2,7 +2,9 @@
   <div class="m-header">
     <div class="icon"></div>
     <h1 class="text">QQ Music</h1>
-
+    <router-link tag="div" class="mine" to="/tag">
+      <i class="icon-mine"></i>
+    </router-link>
   </div>
 </template>
 
@@ -33,8 +35,17 @@ export default {
       font-size:1.5rem
       height:3.3125rem
       line-height:3.3125rem
-      color:#ffcd32
+      color:$color-theme
       vertical-align:bottom
       margin-left:0.9375rem
-
+    .mine
+     position:absolute
+     right:1.3125rem
+     top:0.5rem
+     bottom:0rem
+     height:3.3125rem
+     .icon-mine
+       font-size:2rem
+       line-height: 3.3125rem
+       color:$color-theme
 </style>
