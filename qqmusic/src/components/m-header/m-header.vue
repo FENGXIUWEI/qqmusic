@@ -17,35 +17,36 @@ export default {
 <style lang="stylus" scoped>
   @import "~common/stylus/variable"
   @import "~common/stylus/mixin"
+  /* 38/49*/
   .m-header
-    height:3.75rem
+    height:3.0rem
     text-align:center
     position:relative
     padding-top:0.5rem
     font-size:0rem
     .icon
       display: inline-block
-      width:3.0625rem
-      height:3.3125rem
+      width:2.375rem
+      height:2.5rem
       bg-image('logo')
-      background-size: 3.0625rem 3.3125rem
+      background-size: 2.375rem 2.5rem
       vertical-align:bottom
     .text
       display: inline-block
-      font-size:1.5rem
-      height:3.3125rem
-      line-height:3.3125rem
+      font-size:1.25rem
+      height:2.5rem
+      line-height:2.5rem
       color:$color-theme
       vertical-align:bottom
       margin-left:0.9375rem
     .mine
      position:absolute
-     right:1.3125rem
+     right:0.875rem
      top:0.5rem
      bottom:0rem
-     height:3.3125rem
+     height:2.5rem
      .icon-mine
-       font-size:2rem
-       line-height: 3.3125rem
+       font-size:1.25rem
+       line-height: 2.5rem
        color:$color-theme
 </style>
