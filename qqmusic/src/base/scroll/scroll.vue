@@ -92,7 +92,6 @@ export default {
     },
     // 滚动到指定的位置
     scrollTo () {
-      console.log(arguments)
       this.scroll && this.scroll.scrollTo.apply(this.scroll, arguments)
     },
     // 滚动到指定的目标元素。

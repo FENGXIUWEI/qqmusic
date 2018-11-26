@@ -12,3 +12,15 @@ export function addClass (el, className) {
   newClass.push(className)
   el.className = newClass.join(' ')
 }
+
+export function getData (el, name, val) {
+  // 基础格式
+  let prefix = 'data-'
+  // 判断 val 是否有值
+  if (val) {
+    // 如果有值，则给对象赋值值
+    el.setAttribute(prefix + name, val)
+  }
+  // 取出该对象的值
+  return el.getAttribute(prefix + name)
+}
